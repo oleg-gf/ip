@@ -88,5 +88,5 @@
             $_SESSION["service"] = $_GET["service"];
             $_SESSION["json_answer"] = json_decode($string);
 
-            return $string ? $_SESSION["json_answer"] : false;
+            return $string ? $_SESSION["json_answer"] : "Ошибка получения данных";
         }
